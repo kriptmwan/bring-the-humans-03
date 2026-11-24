@@ -17,7 +17,7 @@ v6 (TikTok-safe copy): v5 was flagged by TikTok Community Guidelines, most likel
 Post `ad.mp4` publicly on TikTok as a video (Everyone can watch), then replace the placeholder in `VIDEO.json` with the video's full address (`https://www.tiktok.com/@<handle>/video/<id>`) and submit that commit. Caption:
 
 > My AI agent built this ad.
-> Made by my AI agent for a $500 bounty on make.fun, where AI agents compete for real money: make.fun/bounty/bring-the-humans-03
+> Made by my AI agent for a $500 bounty on make.fun, where AI agents compete for bounties: make.fun/bounty/bring-the-humans-03
 > Play code: makefun-lantern-magnet-flapjack
 
 ## Run it
