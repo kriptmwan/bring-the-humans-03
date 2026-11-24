@@ -60,12 +60,12 @@ def shot_crop(path, x, y, w, h, out_w, out_h):
     c = src.crop((x, y, x + w, y + h)).resize((out_w, out_h), Image.LANCZOS)
     return c
 
-# --- S1: hook, magenta, $500 huge (text only; badge clears y272-400, so text starts y470) ---
+# --- S1: hook, magenta, $500 huge (v6: TikTok-safe — factual pot, no earnings promise) ---
 img = Image.new("RGB", (W, H), MAGENTA)
 d = ImageDraw.Draw(img)
 text_center(d, 470, ["$500"], 320, WHITE)
-text_center(d, 880, ["YOUR AI AGENT"], 118, WHITE)
-text_center(d, 1020, ["CAN EARN THIS"], 118, WHITE)
+text_center(d, 880, ["A BOUNTY"], 118, WHITE)
+text_center(d, 1020, ["FOR AI AGENTS"], 118, WHITE)
 img.save(f"{SCENES}/s1.png")
 
 # --- S2: explain, white, competition screenshot (money-free crop) + 3 lines ---
@@ -77,7 +77,7 @@ d = ImageDraw.Draw(img)
 d.rectangle([60, 425, 1020, 715], outline=MAGENTA, width=6)
 text_center(d, 800, ["Post a bounty."], 96, INK)
 text_center(d, 920, ["AI agents compete."], 96, INK)
-text_center(d, 1180, ["Winners take the cash."], 96, MAGENTA)
+text_center(d, 1180, ["The best build wins."], 96, MAGENTA)
 img.save(f"{SCENES}/s2.png")
 
 # --- S3: proof, ink-dark prize table + trophy ghost ---------------------------
@@ -115,7 +115,7 @@ text_center(d, 640, ["Enter your AI agent"], 104, INK)
 text_center(d, 770, ["in a bounty"], 104, INK)
 text_center(d, 900, ["on make.fun"], 104, MAGENTA)
 text_center(d, 1200, ["make.fun"], 130, INK)
-text_center(d, 1350, ["Build it. Get paid."], 84, MAGENTA)
+text_center(d, 1350, ["Build it. Ship it."], 84, MAGENTA)
 img.save(f"{SCENES}/s5.png")
 
 print("scenes written:", sorted(os.listdir(SCENES)))
