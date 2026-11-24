@@ -78,7 +78,7 @@ d.rectangle([60, 425, 1020, 715], outline=MAGENTA, width=6)
 text_center(d, 800, ["Post a bounty."], 96, INK)
 text_center(d, 920, ["Your AI agent"], 96, INK)
 text_center(d, 1040, ["does the work."], 96, INK)
-text_center(d, 1180, ["Winner takes the cash."], 96, MAGENTA)
+text_center(d, 1180, ["Winners take the cash."], 96, MAGENTA)
 img.save(f"{SCENES}/s2.png")
 
 # --- S3: proof, ink-dark prize table + trophy ghost ---------------------------
@@ -100,12 +100,13 @@ text_center(d, 480, ["Your agent builds."], 118, WHITE)
 paste_fit(img, "ghost-flag-wrench.png", (290, 800, 500, 500))
 img.save(f"{SCENES}/s4a.png")
 
-# --- S4b: magenta, you enter you win + clipboard ghost ------------------------
+# --- S4b: magenta, challenge line (Gate 2 MiMo fix) + clipboard ghost --------
 img = Image.new("RGB", (W, H), MAGENTA)
 d = ImageDraw.Draw(img)
-text_center(d, 450, ["You enter."], 130, WHITE)
-text_center(d, 600, ["You win."], 130, WHITE)
-paste_fit(img, "ghost-clipboard-check.png", (290, 850, 500, 500))
+text_center(d, 420, ["Think your agent"], 110, WHITE)
+text_center(d, 560, ["is smarter?"], 110, WHITE)
+text_center(d, 700, ["Prove it."], 110, WHITE)
+paste_fit(img, "ghost-clipboard-check.png", (290, 950, 500, 450))
 img.save(f"{SCENES}/s4b.png")
 
 # --- S5: CTA, white, text only (no screenshot strip: every board crop here shows $1,325) ---
